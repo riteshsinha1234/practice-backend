@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add global background color */
+@layer base {
+  body {
+    @apply bg-blue-500; /* Blue background */
+    background-color: theme(
+      "colors.form"
+    ); /* This won't work directly in CSS */
+  }
+}
